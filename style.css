@@ -1,7 +1,115 @@
-body {
-    background-color: lightgrey;
+.TL {
+    color: white;
+    display: inline;
+    position: absolute;
+    left: 0%;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1.5vw;
 }
 
-.LOL {
-    font-size: 48px;
+.aboutMe {
+    color: white;
+    display: inline;
+    position: absolute;
+    left: 74%;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1.5vw;
+}
+.hobbies {
+    color: white;
+    display: inline;
+    position: absolute;
+    left: 83%;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1.5vw;
+}
+
+.webpages {
+    color: white;
+    display: inline;
+    position: absolute;
+    left: 91%;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1.5vw;
+}
+
+.aboutMeLink {
+    color: white;
+    text-decoration: none;
+    background: none;
+}
+
+.hobbiesLink {
+    color: white;
+    text-decoration: none;
+    background: none;
+}
+
+.webpagesLink {
+    color: white;
+    text-decoration: none;
+    background: none;
+}
+
+
+.imageText3 {
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 1.2vw;
+    color: black;
+    font-weight: 500;
+    animation: animate 4s ease forwards;
+}
+
+.imageText2 {
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Gill Sans';
+    font-size: 1.5vw;
+    color: black;
+    font-weight: 520;
+    animation: animate 4s ease forwards;
+}
+
+.imageText {
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Gill Sans';
+    font-size: 3vw;
+    color: black;
+    animation: animate 2s ease forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity:0;
+        transform: translateX(-800px);
+    }
+    100% {
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+.hobbiesTitle {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: animate 2s ease forwards;
+    font-family: 'Gill Sans';
+}
+
+.webpagesTitle {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: animate 2s ease forwards;
+    font-family: 'Gill Sans';
+}
+
+.comein {
+    text-align: center;
+}
+
+* {
+    background-color: rebeccapurple;
 }
