@@ -6,38 +6,49 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="homeSection">
         <div id="menu-container">
             <div class="topBar">
                 <br />
-                <h1 class="TL">Sidak Singh</h1>
-                <h1 class="aboutMe">ABOUT ME</h1>
-                <h1 class="hobbies">HOBBIES</h1>
-                <h1 class="webpages">WEBPAGES</h1>
+                <h1 class="TL"><a class="homeLink" href="#homeSection">Sidak Singh</a></h1>
+                <h1 class="aboutMe"><a class="aboutMeLink" href="#aboutMeSection">ABOUT ME</a></h1>
+                <h1 class="hobbies"><a class="hobbiesLink" href="#hobbiesSection">HOBBIES</a></h1>
+                <h1 class="webpages"><a class="webpagesLink" href="#webpagesSection">WEBPAGES</a></h1>
                 <br />
             </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
+        <div class="welcomeImageContainer">
+            <img class ="welcomeImageProp" src="img/welcomeIcon.png" alt="Welcome Icon">
+        </div>
         <div class="imagecontainer">
             <h1 class="imageText" id="aboutMeSection">Hi, I'm Sidak <br />and this is my portfolio!</h1>
         </div>
         <div class="imagecontainer2">
-            <h4 class="imageText2">About Me:<br />Coding Languages<br /></h4><h4 class="imageText3">- HTML CSS JavaScript Java Python C# -</h4>
+            <h4 class="imageText2">Info: <br />Coding Languages<br /></h4><h4 class="imageText3">- HTML CSS JavaScript Java Python C# -</h4>
         </div>
-        <ul>
-            <h1 class="hobbiesTitle" id="hobbiesSection">Hobbies:</h1>
-            <li class="item1">Computer Science (Both Hardware and Software)</li>
-            <li class="item2">Chess</li>
-            <li class="item3">Video Games</li>
-            <li class="item4">Currency</li>
-            <li class="item5">Biking</li>
+        <div class="aboutMeContainer">
+            <h1><u>About Me</u></h1>
+            <p>I am a hardworking, passionate student from Northern Virginia. Currently, I am part of a specialized computer science program, 
+                which is a field that interests me a lot due to its find array of applications in the workspace. Other forms of science, like physics 
+                and biology, also greatly intrigue me, but I make sure to also give focus to other subject areas, such as History and English. My family and 
+                friends are really important to me, and I spend a lot of time with them outside of school, whether it be playing board games, going out to eat, or 
+                even helping each other with work. In the future, I would really love to work in the health sector in an area that uses priciples of computer science. 
+            </p>
+        </div>
+        <ul class = "hobbiesArea">
+            <h1 id="hobbiesSection"><u>Hobbies:</u></h1>
+            <li>Computer Science (Both Hardware and Software)</li>
+            <li>Chess</li>
+            <li>Video Games</li>
+            <li>Currency</li>
+            <li>Biking</li>
         </ul>
+        </div>
+        <div class="webpagesArea">
         <ul>
-            <h1 class="webpagesTitle" id="webpagesSection">My Webpages:</h1>
+            <h1 id="webpagesSection"><u>My Webpages:</u></h1>
         </ul>
+        </div>
     </div>
 </body>
 </html>

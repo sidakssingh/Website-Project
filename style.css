@@ -1,9 +1,4 @@
-.container {
-    max-width: 1920px;
-    max-height: 1080px;
-}
-
-@keyframes animate {
+@keyframes animateX {
     0% {
         opacity:0;
         transform: translateX(-100%);
@@ -11,6 +6,17 @@
     100% {
         opacity:1;
         transform: translateX(0);
+    }
+}
+
+@keyframes animateY {
+    0% {
+        opacity:0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity:1;
+        transform: translateY(0);
     }
 }
 
@@ -72,6 +78,38 @@
     font-size: 1.5vw;
 }
 
+.homeLink {
+    color: white;
+    text-decoration: none;
+    background: none;
+}
+
+.aboutMeLink {
+    color: white;
+    text-decoration: none;
+    background: none;
+}
+
+.hobbiesLink {
+    color: white;
+    text-decoration: none;
+    background: none;
+}
+
+.webpagesLink {
+    color: white;
+    text-decoration: none;
+    background: none;
+}
+
+.welcomeImageProp {
+    height: 32%;
+    width: auto;
+    position: absolute;
+    margin-top: 8.5%;
+    margin-left: 2%;
+}
+
 .imagecontainer {
     height: 79.95%;
     width: 60%;
@@ -93,7 +131,7 @@
 }
 
 .imageText3 {
-    top: 10%;
+    margin-top: 10%;
     position: relative;
     text-align: center;
     white-space: nowrap;
@@ -104,11 +142,11 @@
     opacity: 100%;
     background: none;
     font-weight: 500;
-    animation: animate 4s ease forwards;
+    animation: animateX 4s ease forwards;
 }
 
 .imageText2 {
-    top: 10%;
+    margin-top: 10%;
     position: relative;
     text-align: center;
     white-space: nowrap;
@@ -119,11 +157,11 @@
     opacity: 100%;
     background: none;
     font-weight: 520;
-    animation: animate 4s ease forwards;
+    animation: animateX 4s ease forwards;
 }
 
 .imageText {
-    top: 22%;
+    margin-top: 20%;
     text-align: center;
     position: relative;
     white-space: nowrap;
@@ -133,74 +171,58 @@
     color: black;
     opacity: 60%;
     background: none;
-    animation: animate 2s ease forwards;
+    animation: animateY 2s ease forwards;
 }
 
-.hobbiesTitle {
-    position: absolute;
-    top: 87.5%;
-    left: 45.5%;
-    font-size: 3.2vw;
+.aboutMeContainer {
+    display: inline-block;
+    margin-top: 45%;
+    margin-left: 2%;
+    text-align:left;
+    position: relative;
+    overflow: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:1.1vw;
+    color: black;
+    opacity: 95%;
     background: none;
 }
 
-.item1 {
-    position: absolute;
-    top: 100%;
-    left: 23%;
-    font-size: 2.3vw;
-    font-family: monospace;
-    background: none;
-}
-
-.item2 {
-    position: absolute;
-    top: 110%;
-    left: 48%;
-    font-size: 2.3vw;
-    font-family: monospace;
-    background: none;
-}
-
-.item3 {
-    position: absolute;
-    top: 120%;
-    left: 46.5%;
-    font-size: 2.3vw;
-    font-family: monospace;
-    background: none;
-}
-
-.item4 {
-    position: absolute;
-    top: 130%;
-    left: 46.5%;
-    font-size: 2.3vw;
-    font-family: monospace;
-    background: none;
-}
-
-.item5 {
-    position: absolute;
-    top: 140%;
-    left: 46.5%;
-    font-size: 2.3vw;
-    font-family: monospace;
-    background: none;
-}
-
-.webpagesTitle {
-    position: absolute;
-    top: 157%;
-    left: 41%;
-    font-size: 3.2vw;
+.hobbiesArea {
+    display: inline-block;
+    margin-left: 1%;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1vw;
+    color: black;
+    opacity: 95%;
+    background: none;
+}
+
+.webpagesArea {
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1vw;
+    color: black;
+    opacity: 95%;
     background: none;
 }
 
 * {
-    background-color: rebeccapurple;
+    background-color: lightsteelblue;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
 }
 
 #menu-container {
