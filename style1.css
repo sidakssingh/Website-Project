@@ -20,6 +20,15 @@
     }
 }
 
+@keyframes animateHover {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
 .topBar {
     background-color: black;
     height: 6.4%;
@@ -28,7 +37,7 @@
     width: 100vw;
     position: fixed;
     overflow: hidden;
-    z-index: 3;
+    z-index: 1;
 }
 
 .TL {
@@ -108,9 +117,6 @@
     position: absolute;
     margin-top: 8.5%;
     margin-left: 2%;
-    overflow:visible;
-    background: none;
-    z-index: 2;
 }
 
 .imagecontainer {
@@ -120,7 +126,6 @@
     left: 21.25%;
     text-align: center;
     vertical-align: middle;
-    z-index: 1;
 }
 
 .imagecontainer2 {
@@ -132,7 +137,6 @@
     background-color: white;
     opacity: 65%;
     border-radius: 1vw;
-    z-index: 1;
 }
 
 .imageText3 {
@@ -148,7 +152,6 @@
     background: none;
     font-weight: 500;
     animation: animateX 3s ease forwards;
-    z-index: 1;
 }
 
 .imageText2 {
@@ -164,7 +167,6 @@
     background: none;
     font-weight: 520;
     animation: animateX 3s ease forwards;
-    z-index: 1;
 }
 
 .imageText {
@@ -179,7 +181,46 @@
     opacity: 60%;
     background: none;
     animation: animateY 2s ease forwards;
-    z-index: 1;
+}
+
+.aboutMeContainer {
+    display: inline-block;
+    margin-top: 45%;
+    margin-left: 1%;
+    text-align:left;
+    box-shadow: 0 0 20px 1px black;
+    position: relative;
+    overflow: hidden;
+    font-size:1.1vw;
+    color: black;
+    opacity: 95%;
+    background: none;
+}
+
+.hobbiesArea {
+    display: inline-block;
+    margin-left: 1%;
+    text-align: left;
+    box-shadow: 0 0 20px 1px black;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.1vw;
+    color: black;
+    opacity: 95%;
+    background: none;
+}
+
+.webpagesArea {
+    display: inline-block;
+    margin-left: 1%;
+    text-align: left;
+    box-shadow: 0 0 20px 1px black;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.1vw;
+    color: black;
+    opacity: 95%;
+    background: none;
 }
 
 * {
@@ -191,6 +232,7 @@ html {
 }
 
 body {
+    min-height: 100vh;
     font-family: 'Gayathri', sans-serif;
 }
 
@@ -198,43 +240,4 @@ body {
     position: absolute;
     white-space: nowrap;
     overflow: hidden;
-}
-
-.hovereffect {
-    display: inline-block;
-    margin-top: 45%;
-    margin-left: 1%;
-    text-align:left;
-    position: relative;
-    overflow: hidden;
-    font-size:1.1vw;
-    color: black;
-    opacity: 95%;
-    background: none;
-    background-color: transparent;
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.10);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.hovereffect:hover {
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.8);
-}
-
-.hovereffect1 {
-    display: inline-block;
-    margin-left: 1%;
-    text-align: left;
-    position: relative;
-    overflow: hidden;
-    font-size: 1.1vw;
-    color: black;
-    opacity: 95%;
-    background: none;
-    background-color: transparent;
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.10);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.hovereffect1:hover {
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.8);
 }
