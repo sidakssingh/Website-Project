@@ -1,3 +1,3 @@
-Welcome to the personal website of Sidak Singh!
+Welcome to Sidak's Website!
 
-Please feel free to reach out to me at sidaksingh@princeton.edu.
+Please feel free to reach out at sidaksingh@princeton.edu.
